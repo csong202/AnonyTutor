@@ -30,37 +30,39 @@
         h4 {
             color: #7B3C9F;
             font-family: Georgia;
+            font-size: 25px;
         }
         p, .pFormatting {
             color: #FAE0D8;
-            font-family: Abel;
-            font-size: 16px;
+            font-family: Verdana;
+            font-size: 18px;
         }
 
         /* Style the nav bar */
-        ul.navBar {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+        .navBar {
             overflow: hidden;
-            background-color: #333333
+            background-color: #333333;
+            position: fixed;
+            top: 0;
+            width: 100%;
         }
-        li.navBar {
+        .navBar a {
             float: left;
-        }
-        li a {
             display: block;
             color: white;
             text-align: center;
-            padding: 16px;
+            padding: 14px 16px;
             text-decoration: none;
+            font-size: 18px;
         }
-        li a:hover {
+        .navBar a:hover {
             background-color: #111111
         }
+        /*
         .flex-container {
             display: flex;
         }
+        */
         ul.flex-container {
             margin: 10px;
             padding: 20px;
@@ -172,17 +174,17 @@
 <body>
 
 <!-- navigation bar -->
-<ul class="navBar">
+<div class="navBar">
 <<<<<<< HEAD
-    <li class="navBar"><a href="#home">About</a></li>
-    <li class="navBar"><a href="{{url_for('register')}}">Register Now</a></li>
-    <li class="navBar"><a href="#about">Contact</a></li>
+    <a href="#home">About</a>
+    <a href="{{url_for('register')}}">Register Now</a>
+    <a href="#about">Contact</a>
 =======
-    <li class="navBar"><a href="about.html">About</a></li>
-    <li class="navBar"><a href="profile.html">Profile</a></li>
-    <li class="navBar"><a href="contact.html">Contact</a></li>
+    <a href="about.html">About</a>
+    <a href="profile.html">Profile</a>
+    <a href="contact.html">Contact</a>
 >>>>>>> 0c9f6710107b88d46b8697db2767c82b7ef28d2f
-</ul>
+</div>
 
 <!-- giant logo and header -->
 <section>
@@ -190,7 +192,7 @@
         style="float:left;width:50vw;height:auto">
     <article style="text-align:center;">
         <h1>AnonyTutor</h1>
-        <h4>put slogan here</h4>
+        <h4>Tutoring without fear!</h4>
         <br>
 <<<<<<< HEAD
         <button class="button1"><a href="{{url_for('register')}}">Register Now!</a></button>
@@ -206,11 +208,11 @@
     <div class="column left">
         <h2>What is AnonyTutor?</h2>
         <p>AnonyTutor is an anonymous tutoring app! Students are given an auto-generated user name and
-            matched with a tutor based on subject and curriculum.<br>
+            matched with a tutor based on subject and curriculum.<br><br>
             Benefits of AnonyTutor:
         </p>
         <ul class="pFormatting" style="list-style-type:circle;">
-            <li>Students have no reason to be afraid to ask for help.</li>
+            <li>AnonyTutor is easily accessible! All you have to do is download the app.</li>
             <li>Students no longer feel embarassed or ashamed for asking for help.</li>
             <li>Students who are afraid to speak up in class or approach their teacher
             now have a way to get help.</li>
