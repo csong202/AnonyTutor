@@ -6,20 +6,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         * {
             box-sizing: border-box;
         }
         body {
-            background-color: #3B3086
+            background-color: #3B3086;
+            font-family: Arial;
+            padding: 20px;
         }
         h1 {
             font-size: 50px;
             color: #E66BBA;
+            font-family: Georgia;
+        }
+        h2 {
+            color: #FFC2C0;
+            font-size: 30px;
+            font-family: Georgia;
         }
         h4 {
             color: #7B3C9F;
+            font-family: Georgia;
         }
         p, .pFormatting {
             color: #FAE0D8;
@@ -61,6 +72,8 @@
         article {
             padding: 16px;
         }
+
+        /* style the columns under logo */
         .column {
             float: left;
             padding: 10px;
@@ -93,6 +106,55 @@
             margin: 4px 2px;
             cursor: pointer;
         }
+
+        /* User Reviews */
+        .heading {
+            font-size: 25px;
+            margin-right: 25px;
+        }
+        .fa {
+            font-size: 25px;
+        }
+        .checked {
+            color: orange;
+        }
+        /* Three column layout */
+        .side {
+            float: left;
+            width: 15%;
+            margin-top: 10px;
+        }
+        .middle {
+            margin-top: 10px;
+            float: left;
+            width: 70%;
+        }
+        /* Place text to the right */
+        .right {
+            text-align: right;
+        }
+        /* The bar container */
+        .bar-container {
+            width: 100%;
+            background-color: #f1f1f1; /* pale grey to show empty bar*/
+            text-align: center;
+        }
+        /* Individual bars */
+        .bar-5 {width: 65%; height: 18px; background-color: #4CAF50;}
+        .bar-4 {width: 27%; height: 18px; background-color: #2196F3;}
+        .bar-3 {width: 2%; height: 18px; background-color: #00bcd4;}
+        .bar-2 {width: 2%; height: 18px; background-color: #ff9800;}
+        .bar-1 {width: 4%; height: 18px; background-color: #f44336;}
+    /* Responsive layout - make the columns stack on top of
+    each other instead of next to each other */
+    @media (max-width: 400px) {
+        .side, .middle {
+            width: 100%;
+        }
+        .right {
+            display: none;
+        }
+    }
     </style>
 </head>
 
@@ -137,10 +199,78 @@
         <img class="imgColumnRight" src="images/girl_texting.png" alt="Girl texting"
             style="float:right;width:40%;height:auto;">
     </div>
+</div><br><br>
+
+<!-- Customer Reviews -->
+<h2>Customer Reviews</h2>
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<p style="color:black;font-family:arial;">4.5 average based on 368 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>240</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>49</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>9</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
 </div>
-
-
-
+<!-- Customer Reviews taken from
+https://www.w3schools.com/howto/howto_css_user_rating.asp -->
 
 
 <footer>
