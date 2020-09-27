@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <!-- Font Awesome Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <style>
         * {
             box-sizing: border-box;
@@ -24,7 +23,7 @@
             font-family: Georgia;
         }
         h2 {
-            color: #FFC2C0;
+            color: #7291F9;
             font-size: 30px;
             font-family: Georgia;
         }
@@ -64,6 +63,17 @@
         ul.flex-container {
             margin: 10px;
             padding: 20px;
+        }
+        a.button1: link, a.button1:visited {
+            background-color: #7292F9;
+            color: white;
+            padding 15 px 25 px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a.button1: hover, a.button1: active {
+            background-color: CornFlowerBlue;
         }
 
         section {
@@ -162,9 +172,15 @@
 
 <!-- navigation bar -->
 <ul class="navBar">
+<<<<<<< HEAD
     <li class="navBar"><a href="#home">About</a></li>
-    <li class="navBar"><a href="#news">Register Now</a></li>
+    <li class="navBar"><a href="{{url_for('register')}}">Register Now</a></li>
     <li class="navBar"><a href="#about">Contact</a></li>
+=======
+    <li class="navBar"><a href="about.html">About</a></li>
+    <li class="navBar"><a href="profile.html">Profile</a></li>
+    <li class="navBar"><a href="contact.html">Contact</a></li>
+>>>>>>> 0c9f6710107b88d46b8697db2767c82b7ef28d2f
 </ul>
 
 <!-- giant logo and header -->
@@ -175,7 +191,11 @@
         <h1>AnonyTutor</h1>
         <h4>put slogan here</h4>
         <br>
-        <button class="button1">Register Now!</button>
+<<<<<<< HEAD
+        <button class="button1"><a href="{{url_for('register')}}">Register Now!</a></button>
+=======
+        <a href="profile.html" class="button1">Register Now!</a>
+>>>>>>> 0c9f6710107b88d46b8697db2767c82b7ef28d2f
     </article>
 </section>
 <br><br><br>
@@ -184,11 +204,15 @@
 <div class="row">
     <div class="column left">
         <h2>What is AnonyTutor?</h2>
-        <p>AnonyTutor is an anonymous tutoring app!<br>
-            Benefits:
+        <p>AnonyTutor is an anonymous tutoring app! Students are given an auto-generated user name and
+            matched with a tutor based on subject and curriculum.<br>
+            Benefits of AnonyTutor:
         </p>
         <ul class="pFormatting" style="list-style-type:circle;">
             <li>Students have no reason to be afraid to ask for help.</li>
+            <li>Students no longer feel embarassed or ashamed for asking for help.</li>
+            <li>Students who are afraid to speak up in class or approach their teacher
+            now have a way to get help.</li>
         </ul>
     </div>
     <div class="column right">
@@ -201,8 +225,8 @@
     </div>
 </div><br><br>
 
-<!-- Customer Reviews -->
-<h2>Customer Reviews</h2>
+<!-- Customer Ratings -->
+<h2>Customer Ratings</h2>
 <span class="heading">User Rating</span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
@@ -276,6 +300,7 @@ https://www.w3schools.com/howto/howto_css_user_rating.asp -->
 <footer>
 
 </footer>
+
 
 <script>
 
