@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Avenir Next CE';
+  src: url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Medium/1a7c9181-cd24-4943-a9d9-d033189524e0.eot") format("eot"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Medium/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Medium/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("ttf"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Medium/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Avenir Next CE';
+  font-weight: 600;
+  src: url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Demi/12d643f2-3899-49d5-a85b-ff430f5fad15.eot") format("eot"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Demi/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Demi/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("ttf"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Demi/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2") format("woff2");
+}
+
+body {
+  background-image: url('static/images/logo.jpg');
+}
+h1 {
+  color: aqua;
+}
+.container-fluid{
+  background-color: black;
+}
+
+.infinity-image-container{
+  background: url('bg.jpg') center no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  height: 100vh;
+}
+
+.infinity-form-container{
+  background: #FFC2C0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infinity-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.infinity-form h4 {
+  font-weight: bold;
+  color: white;
+}
+
+.infinity-form .form-input {
+  position: relative;
+}
+
+.infinity-form .form-input input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: white;
+  padding-left: 45px;
+}
+
+.infinity-form .form-input span {
+  position: absolute;
+  top: 8px;
+  padding-left: 20px;
+  color: #777;
+}
+
+.infinity-form .form-input input:focus,
+.infinity-form .form-input input:valid {
+  border: 2px solid #4285f4;   
+}
+
+.infinity-form input[type="checkbox"]:not(:checked) + label:before{
+  background: transparent;
+  border:2px solid white;
+  width: 15px;
+  height: 15px;
+}
+
+.infinity-form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+background-color: #4285f4 !important;
+border:0px;
+}
+
+.infinity-form button[type="submit"] {
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #4285f4, #709de8);   /*Button Color*/
+  color: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.infinity-form button[type="submit"]:hover {
+  background: linear-gradient(45deg, #709de8, #4285f4);   /*Button color when hover*/
+}
+
+.forget-link , .login-link , .register-link {
+  color: #fff;
+  font-weight: bold;
+}
+
+.forget-link:hover , .login-link:hover , .register-link:hover {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.infinity-form .btn-social {
+  color: white;
+  border: 0;
+  display: inline-block;
+  margin: 0px;
+  margin-right: 10px;
+  font-weight: bold;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.infinity-form .btn-social:hover {
+  text-decoration: underline;
+}
+
+.infinity-form .btn-facebook:hover {
+  color: hsla(221, 40%, 40%, 1);
+}
+
+.infinity-form .btn-google:hover {
+  color: hsla(4, 59%, 47%, 1);
+}
+
+.infinity-form .btn-twitter:hover {
+  color: hsla(195, 78%, 54%, 1);
+}
